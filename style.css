@@ -105,55 +105,37 @@ header.Top-bar.container.personal_details > div a{
     position:relative;
     color: #fff;
 }
-nav.navigation-bar.container >div a{
+nav .navigation-bar .container >div a{
     display: flex;
     padding:2rem 1rem 0 12rem;
     margin: 1rem;
     text-decoration: none;
+    font-size: 100px;
     justify-content: center;
     color:yellow;
     cursor: pointer;
     align-items: center;
-    transition: all 0.5s ease;
+    transition: all 3s ease;
 }
 nav.navigation-bar{
     justify-content: center;
-    padding:10rem 0 19rem 0;
+    /* padding:10rem 0 19rem 0; */
+    padding-bottom: 29rem;
     background-image: url(images/dance.jpg);
+    z-index: top;
 }
 nav.navigation-bar.container a:hover{
     background-color:snow;
     color: hotpink;
-    transition: all 0.5s ease;
+    
+    transition: all 3s ease;
 }
-/*hero section*/
-.hero{
-    background: #1f4037;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    padding: 200px 0;
-}
-.hero .container{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 90%;
-    padding:30px;
-    text-align: center;
-}
-.hero .container .heading_home{
-    font-size: 200px;
-    margin-bottom: auto;
-    color: palevioletred;
-}
-
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
   }
   
   li {
@@ -173,5 +155,158 @@ ul {
   }
   
   .active {
-    background-color: #04AA6D;
+    text-decoration: yellow underline;
+    background-color: transparent;
   }
+/*hero section*/
+.hero{
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 100px 0;
+}
+.hero .container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    padding:40px;
+    text-align: center;
+}
+.hero .container .heading_home{
+    font-size: 100px;
+    margin-bottom: auto;
+    color: navajowhite;
+}
+.hero .container .question{
+    color: olive;
+}
+.hero .container h2{
+    font-size: 30px;
+}
+.hero .container .description span{
+    background: #C33764;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+}
+.highlight{
+    border-bottom: 4px solid rgb(132 , 0 , 255);
+}
+/*forms section*/
+.forms{
+    background: #544a7d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffd452, #544a7d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffd452, #544a7d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height:90%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding:2rem 0;
+}
+.forms .container .heading h1{
+    background: #3C3B3F;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #605C3C, #3C3B3F);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #605C3C, #3C3B3F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    background-size: 100%;
+    font-size: 2.5rem;    
+}
+.forms .forms_wrapper{
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr;
+}
+.forms .forms_wrapper .form{
+    margin: 10px;
+    height: 425px;
+    width: 300px;
+    border-radius: 4px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+    color: white;
+    background-image: linear-gradient(to right #ffd452 0% #544a7d 100%);
+    transition: 0.3s ease-in;
+}
+
+/*Admission section*/
+.Admission {
+    align-items: center;
+    justify-content: center;
+    padding: 100px 50px;
+    background: #093028;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #237A57, #093028);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #237A57, #093028); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.Admission .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    z-index: 1;
+    width:100%;
+    font-size: 50px;
+}
+.Admission h1{
+    background: #4CA1AF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #C4E0E5, #4CA1AF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #C4E0E5, #4CA1AF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+}
+.Admission p{
+    font-size: 30px;
+}
+.home_button{
+    font-size: 1.8rem;
+    background: #1e130c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 20px 60px;
+    border: none;
+    border-radius: 4px;
+    color:#fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+}
+.home_button a{
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-decoration: none;
+}
+.home_button::after{
+     position: absolute;
+     content: '';
+     top: 0;
+     left: 0;
+     width: 0;
+     height: 100%;
+     background:  #616a6b ;
+     transition: all 0.35s;
+     border-radius: 4px;
+}
+.home_button :hover{
+    color: #616a6b;
+}
+.home_button :hover::after{
+    width: 100%;
+}
