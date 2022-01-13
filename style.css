@@ -133,7 +133,7 @@ nav.navigation-bar.container a:hover{
     background: linear-gradient(to bottom, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 200px 0;
 }
-.hero.container{
+.hero .container{
     display:flex;
     justify-content: center;
     align-items: center;
@@ -142,8 +142,36 @@ nav.navigation-bar.container a:hover{
     padding:30px;
     text-align: center;
 }
-.hero.container.heading_home{
+.hero .container .heading_home{
     font-size: 200px;
     margin-bottom: auto;
     color: palevioletred;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: #111;
+  }
+  
+  .active {
+    background-color: #04AA6D;
+  }
