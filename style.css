@@ -1,0 +1,149 @@
+@font-face {
+    font-family: "Raleway-black";
+    src:url(../FONTS/Raleway-Black.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-BlackItalic";
+    src:url(../FONTS/Raleway-BlackItalic.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-ExtraLight";
+    src:url(../FONTS/Raleway-ExtraLight.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-Light";
+    src:url(../FONTS/Raleway-Light.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-medium";
+    src:url(../FONTS/Raleway-Medium.ttf)
+}
+
+@font-face {
+    font-family: "Raleway-bold";
+    src:url(../FONTS/Raleway-SemiBold.ttf)
+}
+.container{
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width:576px) {
+    .container{
+        max-width: 540px;
+    }   
+}
+
+@media (min-width:768px) {
+    .container{
+        max-width: 720px;
+    }   
+}
+
+@media (min-width:992px) {
+    .container{
+        max-width: 960px;
+    }   
+}
+
+@media (min-width:1200px) {
+    .container{
+        max-width: 1152px;
+    }   
+}
+/*reset*/
+*{
+    padding : 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+body{
+    -webkit-font-smoothing:antialised;
+}
+header.Top-bar .container{
+    display: flex;
+    justify-content: space-between;
+}
+/* header.Top-bar.container .heading {
+    background-color: #ff8177;
+    background-image: linear-gradient(to top,#ff0844 0%,#ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color:transparent;
+    -moz-text-fill-color:transparent;
+    display: flex;
+    background:wheat;
+    text-align: center;
+    border: 5px outset red;
+} */
+header.Top-bar{
+    background-color: blueviolet;
+    background-repeat: no-repeat;
+    color: cornsilk;
+    padding: 0.75rem 0;
+    font-family: "Railway-black";
+    justify-content: center;
+}
+header.Top-bar.container.icons{
+    justify-content: space-between;
+    display: flex;
+}
+header.Top-bar.container.a{
+    padding: 0.75rem 0;
+}
+header.Top-bar.container.personal_details > div a{
+    color: white;
+    text-decoration:none;
+}
+.magic-shadow{
+    position:relative;
+    color: #fff;
+}
+nav.navigation-bar.container >div a{
+    display: flex;
+    padding:2rem 1rem 0 12rem;
+    margin: 1rem;
+    text-decoration: none;
+    justify-content: center;
+    color:yellow;
+    cursor: pointer;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+nav.navigation-bar{
+    justify-content: center;
+    padding:10rem 0 19rem 0;
+    background-image: url(images/dance.jpg);
+}
+nav.navigation-bar.container a:hover{
+    background-color:snow;
+    color: hotpink;
+    transition: all 0.5s ease;
+}
+/*hero section*/
+.hero{
+    background: #1f4037;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #99f2c8, #1f4037);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #99f2c8, #1f4037); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 200px 0;
+}
+.hero.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90%;
+    padding:30px;
+    text-align: center;
+}
+.hero.container.heading_home{
+    font-size: 200px;
+    margin-bottom: auto;
+    color: palevioletred;
+}
